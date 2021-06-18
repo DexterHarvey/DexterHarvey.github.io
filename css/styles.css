@@ -47,6 +47,28 @@
   box-sizing: border-box;
 }
 
+#project-links {
+    padding-top: 30px;
+}
+
+.iframe-container{
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; 
+  height: 0;
+}
+.iframe-container iframe{
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#linkDesc {
+    display: inline-block;
+}
+
 html {
   font-family: sans-serif;
   line-height: 1.15;
@@ -570,7 +592,7 @@ pre code {
 }
 @media (min-width: 1200px) {
   .container-xl, .container-lg, .container-md, .container-sm, .container {
-    max-width: 1140px;
+    max-width: 1200px;
   }
 }
 .row {
@@ -10075,7 +10097,7 @@ hr.light {
 header.masthead {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 4.5rem);
-  background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url("../assets/img/bg-masthead.jpg");
+  background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url("../assets/img/masthead-final.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -10097,6 +10119,10 @@ header.masthead h1 {
   header.masthead h1 {
     font-size: 3rem;
   }
+  .project-name {
+    padding-left: 20px;
+    padding-right: 20px;
+}
 }
 @media (min-width: 1200px) {
   header.masthead h1 {
@@ -10143,3 +10169,4 @@ header.masthead h1 {
 .text-white-75 {
   color: rgba(255, 255, 255, 0.75);
 }
+
